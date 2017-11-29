@@ -10,10 +10,10 @@
 </head>
 <?php
 $db_server = "localhost";
-$db_name = "mydb";
-$db_user = "root";
-$db_passwd = "1234";
-if(!@mysql_connect($db_server, $db_user, $db_passwd))
+$db_name = "105021028";
+$db_user = "105021028";
+$db_passwd = "#tlX6iWYC";
+$link=mysqli_connect( "localhost", $db_user, $db_passwd,$db_name);
     die("無法對資料庫連線");
 mysql_query("SET NAMES utf8");
 if(!@mysql_select_db($db_name))
