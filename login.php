@@ -6,17 +6,63 @@
  * Time: 上午 10:52
  */
 ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <audio autoplay loop>
-    <source src="bluebird.mp3" type="audio/mpeg">
-   </audio>
+    <audio autoplay loop>
+        <source src="bluebird.mp3" type="audio/mpeg">
+    </audio>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-   <form name="form" method="post" action="connect.php">
-       帳號：<input type="text" name="id" /> <br>
-       密碼：<input type="password" name="pw" /> <br>
-       <input type="submit" name="button" value="登入" />&nbsp;&nbsp;
-       <a href="register.php">申請帳號</a>
-   </form>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+<link href="login.css" rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="container">
+    <div class="row login_box">
+        <div class="col-md-12 col-xs-12" align="center">
+            <div class="line"><h3>12 : 30 AM</h3></div>
+            <div class="outter"><img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"/></div>
+            <h1>Hi Guest</h1>
+            <span>INDIAN</span>
+        </div>
+        <div class="col-md-6 col-xs-6 follow line" align="center">
+            <h3>
+                125651 <br/> <span>FOLLOWERS</span>
+            </h3>
+        </div>
+        <div class="col-md-6 col-xs-6 follow line" align="center">
+            <h3>
+                125651 <br/> <span>FOLLOWERS</span>
+            </h3>
+        </div>
+
+        <div class="col-md-12 col-xs-12 login_control">
+            <form name="form" method="post" action="connect.php">
+            <div class="control">
+                <div class="label">Email Address</div>
+                <input type="text" class="form-control" value="admin@gmail.com" name="id"/>
+            </div>
+
+            <div class="control">
+                <div class="label">Password</div>
+                <input type="password" class="form-control" value="123456" name="pw"/>
+            </div>
+            <div align="center">
+                <button class="btn btn-orange" type="submit">LOGIN</button>
+            </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+</div>
+
 </body>
+</html>
