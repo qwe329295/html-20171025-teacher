@@ -1,6 +1,7 @@
 body{
     background: url("http://120.108.117.245/~105021028/naruto.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
     background-color: #2B2B2B;
 
 }
