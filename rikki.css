@@ -1,0 +1,23 @@
+body
+{/* background-color:#FFEECC;
+  background-image:url("img/repeat_21.jpg"); /* light blue
+  background-image:url("img/repeat_22.jpg"); /* light purple */
+    background-image:url("img/repeat_27.jpg"); /* light orange */
+    font-family:"Times New Roman",Georgia,Serif;
+}
+h2 {font-family:"標楷體"; font-style:bold; color:blue;}
+.h2-1 {font-family:"標楷體";}
+table   {text-align: left; background-color:MintCream;}
+.table1 {background-color:MintCream;}
+.table2 {background-color:transparent;}
+.table3
+{opacity:0.0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+
+.td1 {background-color:Cyan;}
+
+a:link {font-style:bold; color:#0000FF;}      /* unvisited link */
+a:visited {color:#FF00FF;}  /* visited link */
+a:hover {font-style:bold; color:#00DD00;}  /* mouse over link; cursor:crosshair; */
+a:active {cursor:wait; color:#0000FF;}  /* selected link */
