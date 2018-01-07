@@ -20,11 +20,11 @@ $row=$result->fetch_row();
 if($id != null && $pw != null && $row[1] == $id && $row[3] == $pw)
 {  $_SESSION['id'] = $id;
     echo '登入成功!';
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 }
 else
 {
     echo '登入失敗!';
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=login.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 }
 ?>

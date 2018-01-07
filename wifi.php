@@ -1,3 +1,6 @@
+<?php
+session_start();
+include ('func.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,23 +43,7 @@
 
 
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html"><span style="color: #f21700">首頁</span></a></li>
-                <li><a href="board.html"><span style="color: #f21700">重要訊息公告</span></a></li>
-                <li><a href="ComputerOrganization.html"><span style="color: #f21700">計算機組織</span></a></li>
-                <li><a href="MicroprocessorSystem.html"><span style="color: #f21700">微處理器系統</span></a></li>
-                <li class="active"><a href="wifi.html"><span style="color: #f21700">無線網路</span></a></li>
-                <li><a href="webtech.html"><span style="color: #f21700">多媒體網站技術</span></a></li>
-                <li><a href="EmbeddedSystems.html"><span style="color: #f21700">嵌入式系統</span></a></li>
-                <li><a href="Network.html"><span style="color: #f21700">網站分析與管理</span></a></li>
-                <li><a href="book.html"><span style="color: #f21700">著作</span></a></li>
-                <li><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+      <?php bar(4)?>
     </div>
 </nav>
 
@@ -66,14 +53,14 @@
         <h1>陳瑞奇(Jui-Chi Chen)  <img src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg" width="110"></h1>
         <p>professor of Asia University</p>
     </div>
-    </div>
+</div>
 <center>
     <h2>無線網路(<a href="wcsCN.htm">无线网络</a>)<br />Wireless Networks</h2>
 
     <table width="90%" border="1" style="border:3px #FFAC55 solid;">
 
         <tr><td width="14%" class="td1"> 日 期 (Date)</td><td class="td1"> 公 告 事 項 (Information)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <font size=4><B>(<a href="wcsCN.htm">简体中文画面</a>)</B></font>   <a href="http://moodle.asia.edu.tw/" target=_blank>亞洲大學磨課師教學平台</a></td></tr>
+                <font size=4><B>(<a href="wcsCN.htm">简体中文画面</a>)</B></font>   <a href="http://moodle.asia.edu.tw/" target=_blank>亞洲大學磨課師教學平台</a></td></tr>
         <!tr><!td2017/06/30</td><!td學期結束。(The semester is over!) <!img src="../img/new2.gif"><!/td><!/tr>
         <tr><td>2017/05/23</td><td>無線網路<font color=red><b>補考</b></font>在6/23(五)下午1:30-3:00，地點：I427，筆試，開書考。(可以補交作業及個別問題討論)    <img src="../img/new2.gif" alt="New message!" /></td></tr>
         <tr><td>2017/05/23</td><td>資工<font color=red><b>2A</b></font>在<font color=red><b>6/16(五)下午1:30-3:00</b></font>無線網路<font color=red><b>期末考</b></font>，地點：<font color=red><b>I427</b></font>，範圍：第7章到第14章，筆試，開書考。 </td></tr>
@@ -90,15 +77,15 @@
         <tr><td>2017/02/11</td><td>Office Hours(請益時間):  <br />Tue.(二) 9:10-14:00 &nbsp;&nbsp; Wed.(三) 11:10-15:00	 &nbsp;&nbsp; Fri.(五)8:10-9:00</td></tr>
         <tr><td>2017/02/01</td><td>資工CSIE <font color=red><b>2A</b></font>無線網路(Wireless Networks)--上課時間(Class & Location): 每週五(FRI)13:10-16:00在Room <font color=red><b>I427</b></font>教室。</td></tr>
         <tr><td>2017/02/01</td><td>※請遵守智慧財產權規定，不可非法影印教科書。<font color=black>參考資料(Reference)：</font><br />
-            1. D.P. Agrawal and Q.-A. Zeng, “Introduction to Wireless and Mobile Systems,” 4th Ed. (International), Cengage Learning (東華書局代理), 2015, ISBN: 9781305259621.<br />
-            2. 曾恕銘編譯, “無線通訊系統概論：行動通訊與網路 4/e,” 東華書局, 2016, ISBN-13：9789865632786。<br />
-            3. 陳裕賢、張志勇、陳宗禧、石貴平、吳世琳、廖文華、許智舜、林勻蔚, “無線網路與行動計算,” 全華書局, 2013/2, ISBN：9789572188637<br />
-            </font></td></td></tr>
+                1. D.P. Agrawal and Q.-A. Zeng, “Introduction to Wireless and Mobile Systems,” 4th Ed. (International), Cengage Learning (東華書局代理), 2015, ISBN: 9781305259621.<br />
+                2. 曾恕銘編譯, “無線通訊系統概論：行動通訊與網路 4/e,” 東華書局, 2016, ISBN-13：9789865632786。<br />
+                3. 陳裕賢、張志勇、陳宗禧、石貴平、吳世琳、廖文華、許智舜、林勻蔚, “無線網路與行動計算,” 全華書局, 2013/2, ISBN：9789572188637<br />
+                </font></td></td></tr>
         <tr><td>2017/02/01</td><td>
-            本校資工系大學部教育目標:<br />
-            一、奠定學生之資訊基本能力與素養<br />
-            二、培育學生之資訊專業技術及團隊合作應用能力<br />
-            三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
+                本校資工系大學部教育目標:<br />
+                一、奠定學生之資訊基本能力與素養<br />
+                二、培育學生之資訊專業技術及團隊合作應用能力<br />
+                三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
     </table><br />
     <center>
         ※以下部分檔案為PDF格式，請上網下載安裝Adobe Acrobat Reader中文版。

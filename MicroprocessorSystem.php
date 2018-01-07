@@ -1,3 +1,7 @@
+<?php
+session_start();
+include ('func.php');?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,23 +42,7 @@
 
             <a class="navbar-brand" href="http://www.asia.edu.tw/"><img src="asia.png" width="110"></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html"><span style="color: #f21700">首頁</span></a></li>
-                <li><a href="board.html"><span style="color: #f21700">重要訊息公告</span></a></li>
-                <li><a href="ComputerOrganization.html"><span style="color: #f21700">計算機組織</span></a></li>
-                <li class="active"><a href="MicroprocessorSystem.html"><span style="color: #f21700">微處理器系統</span></a></li>
-                <li><a href="wifi.html"><span style="color: #f21700">無線網路</span></a></li>
-                <li><a href="webtech.html"><span style="color: #f21700">多媒體網站技術</span></a></li>
-                <li><a href="EmbeddedSystems.html"><span style="color: #f21700">嵌入式系統</span></a></li>
-                <li><a href="Network.html"><span style="color: #f21700">網站分析與管理</span></a></li>
-                <li><a href="book.html"><span style="color: #f21700">著作</span></a></li>
-                <li><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+      <?php bar(3)?>
     </div>
 </nav>
 
@@ -64,7 +52,7 @@
         <h1>陳瑞奇(Jui-Chi Chen)  <img src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg" width="110"></h1>
         <p>professor of Asia University</p>
     </div>
-    </div>
+</div>
 <h2>微處理器系統<br />Microprocessor Systems</h2>
 
 <table width="90%" border="1"style="border:3px #FFAC55 solid;">
@@ -82,17 +70,17 @@
     <tr><td>2017/09/05</td><td>單晶片8051實驗教室為資訊大樓<font color=red>I533</font>微算機系統實驗室，實驗課每位同學請攜帶備用隨身碟一隻(容量不限)。</td></tr>
     <tr><td>2017/09/01</td><td>大三微處理器系統(Microprocessor System)--上課時間地點(Class & Location):<br />資工CSIE <font color=blue><b>3A</b>: 每週三(WED)13:10-16:00在Room <font color=red><b>I533</b></font>教室。</font><br /></td></tr>
     <tr><td>2017/09/01</td><td>參考書(Reference): ※請遵守智慧財產權規定，不可非法影印教科書。<br /><font size=2>
-        1. 張義和等, "例說89S51 C語言," 第五版, 新文京, 2015/07.<br />
-        2. 江戶川, "快學89S51-C 新手上路," 新文京, 2012/03。<br />
-        3. I. Scott Mackenzie and Raphael C.-W. Phan, “The 8051 Microcontroller,” 4th ed., Pearson Prentice Hall (高立圖書代理), 2007。<br />
-        4. 林振漢, "8051 單晶片實作-使用C語言," 初版七刷, 博碩文化, 2007/03。<br />
-        5. 林銘波, "微算機基本原理與應用MCS-51第二版," 全華科技圖書, 2008/3。<br />
-    </font></td></tr>
+                1. 張義和等, "例說89S51 C語言," 第五版, 新文京, 2015/07.<br />
+                2. 江戶川, "快學89S51-C 新手上路," 新文京, 2012/03。<br />
+                3. I. Scott Mackenzie and Raphael C.-W. Phan, “The 8051 Microcontroller,” 4th ed., Pearson Prentice Hall (高立圖書代理), 2007。<br />
+                4. 林振漢, "8051 單晶片實作-使用C語言," 初版七刷, 博碩文化, 2007/03。<br />
+                5. 林銘波, "微算機基本原理與應用MCS-51第二版," 全華科技圖書, 2008/3。<br />
+            </font></td></tr>
     <tr><td>2017/08/01</td><td>
-        本校資工系大學部教育目標:<br />
-        一、奠定學生之資訊基本能力與素養<br />
-        二、培育學生之資訊專業技術及團隊合作應用能力<br />
-        三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
+            本校資工系大學部教育目標:<br />
+            一、奠定學生之資訊基本能力與素養<br />
+            二、培育學生之資訊專業技術及團隊合作應用能力<br />
+            三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
 </table><br />
 <center>
     ※以下部分檔案為PDF格式，請上網下載安裝Adobe Acrobat Reader中文版。
@@ -106,7 +94,7 @@
         <tr><td></td><td><a href="mcs-ch01.pdf">Chapter 1. 輕鬆看MCS-51(PDF格式)</a> (1.9MB)</td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="8051_uP1board_I.pdf" target=_blank>Ch 01-1. μP-1實驗板電路模組(Part I).PDF</a> (1.2MB) </td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="uP1-Circuits-All.pdf">Ch 01-2. μP-1萬用實驗板所有電路圖.PDF</a> (0.7MB)&nbsp;&nbsp;
-            <a href="uP1-Circuits-All.doc" target=_blank>Word格式</a> (11.5MB) </td></tr>
+                <a href="uP1-Circuits-All.doc" target=_blank>Word格式</a> (11.5MB) </td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="8051steps.pdf" target=_blank>Ch 01-3. 8051實驗步驟範例(使用μP-1實驗板).PDF</a> (1.2MB) </td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="MCS-51Writer.zip" target=_blank>Ch 01-4. Leaper 5E MCS-51 Writer燒錄器軟體(可以Demo試用).ZIP</a>for WinXP (0.7MB)</td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="A08-0016pgmsx8051writer.zip" target=_blank>Ch 01-4. pgmsx 8051 Writer燒錄器軟體.ZIP</a> (15MB)for Win7</td></tr>
@@ -125,7 +113,7 @@
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="hw1-ch01.c" target=_blank>Lab.1(HW#1) LED燈交互閃爍程式簡單範例ch01.c</a> (C51語言參考程式) </td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="hw1-ch03-3-3.c" target=_blank>Lab.1(HW#1) LED霹靂燈程式範例ch03-3-3.c</a> (C51語言參考程式)</td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;以上三項檔案均可在教科書附光碟中取得: <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) μVision 5試用版在CD:\驅動程式與參考資料\c51v805.exe
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) C51語言範例程式在CD:\習作程式參考\ch01及ch03中</td></tr>
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) C51語言範例程式在CD:\習作程式參考\ch01及ch03中</td></tr>
 
         <tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr>
 
@@ -175,35 +163,35 @@
 
         <tr><td></td><td><font size=4 color=red>8051實驗其他相關參考資料:</font></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="x8051_ascii.pdf" target=_blank>Lab01. ASCII文數字標準交換碼.PDF</a></td></tr>
+                <a href="x8051_ascii.pdf" target=_blank>Lab01. ASCII文數字標準交換碼.PDF</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="AT89s51datasheet.pdf" target=_blank>Lab02. ATMEL 8051 Datasheet晶片規格文件.PDF</a> (AT89S51-24PC)</td></tr>
+                <a href="AT89s51datasheet.pdf" target=_blank>Lab02. ATMEL 8051 Datasheet晶片規格文件.PDF</a> (AT89S51-24PC)</td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="x8051_summary.pdf" target=_blank>Lab03. 8051總指令集摘要.PDF</a></td></tr>
+                <a href="x8051_summary.pdf" target=_blank>Lab03. 8051總指令集摘要.PDF</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="8051instrMemo.ppt" target=_blank>Lab04. 8051指令備忘錄.PPT</a></td></tr>
+                <a href="8051instrMemo.ppt" target=_blank>Lab04. 8051指令備忘錄.PPT</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://www.win.tue.nl/~aeb/comp/8051/set8051.html" target=_blank>Lab05. 8051 Instruction Set (Site 1)</a></td></tr>
+                <a href="http://www.win.tue.nl/~aeb/comp/8051/set8051.html" target=_blank>Lab05. 8051 Instruction Set (Site 1)</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://uva.ulb.ac.be/cit_courseware/i8051/part1.htm" target=_blank>Lab06. 8051 Instruction Set (Site 2)</a></td></tr>
+                <a href="http://uva.ulb.ac.be/cit_courseware/i8051/part1.htm" target=_blank>Lab06. 8051 Instruction Set (Site 2)</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://www.chipware.com.tw/chinese/8051.htm" target=_blank>Lab07. 旗威科技提供8051初學者參考資料</a></td></tr>
+                <a href="http://www.chipware.com.tw/chinese/8051.htm" target=_blank>Lab07. 旗威科技提供8051初學者參考資料</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="GeniusNSP.zip" target=_blank>Lab08. Genius NSP萬用燒錄器軟體(可以Demo試用)</a> (Win99/2000/XP)</td></tr>
+                <a href="GeniusNSP.zip" target=_blank>Lab08. Genius NSP萬用燒錄器軟體(可以Demo試用)</a> (Win99/2000/XP)</td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://www.atmel.com/dyn/products/product_card.asp?part_id=1917" target=_blank>Lab09. ATMEL 8051 Architecture其他相關資料</a></td></tr>
+                <a href="http://www.atmel.com/dyn/products/product_card.asp?part_id=1917" target=_blank>Lab09. ATMEL 8051 Architecture其他相關資料</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://www.alldatasheet.com/" target=_blank>Lab10. 積體電路IC datasheet規格文件查詢網站</a></td></tr>
+                <a href="http://www.alldatasheet.com/" target=_blank>Lab10. 積體電路IC datasheet規格文件查詢網站</a></td></tr>
         <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="http://micro.cc.ntust.edu.tw/" target=_blank>Lab11. 年度微電腦應用系統設計製作競賽</a></td></tr>
+                <a href="http://micro.cc.ntust.edu.tw/" target=_blank>Lab11. 年度微電腦應用系統設計製作競賽</a></td></tr>
         <tr><td></td><td><br /><b><font color="red">[End]</font></b></td></tr>
     </table>
 </center>
 
 
-    <footer class="container-fluid text-center">
-        <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
-    </footer>
+<footer class="container-fluid text-center">
+    <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
+</footer>
 
 </body>
 </html>

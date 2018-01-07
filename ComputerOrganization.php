@@ -1,3 +1,7 @@
+<?php
+session_start();
+include ('func.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,23 +45,7 @@
 
             <a class="navbar-brand" href="http://www.asia.edu.tw/"><img src="asia.png" width="110"></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li ><a href="index.html"><span style="color: #f21700">首頁</span></a></li>
-                <li><a href="board.html"><span style="color: #f21700">重要訊息公告</span></a></li>
-                <li class="active"><a href="ComputerOrganization.html"><span style="color: #f21700">計算機組織</span></a></li>
-                <li><a href="MicroprocessorSystem.html"><span style="color: #f21700">微處理器系統</span></a></li>
-                <li><a href="wifi.html"><span style="color: #f21700">無線網路</span></a></li>
-                <li><a href="webtech.html"><span style="color: #f21700">多媒體網站技術</span></a></li>
-                <li><a href="EmbeddedSystems.html"><span style="color: #f21700">嵌入式系統</span></a></li>
-                <li><a href="Network.html"><span style="color: #f21700">網站分析與管理</span></a></li>
-                <li><a href="book.html"><span style="color: #f21700">著作</span></a></li>
-                <li><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+       <?php bar(2)?>
     </div>
 </nav>
 
@@ -77,22 +65,22 @@
         <tr><td>2017/11/01</td><td><font color=red><b>第九週(資電組11/16,數位組11/14)</font></b>資工3A計算機組織期中考，時間：<font color=red><b>9:30~11:00</b></font>，地點：上課教室，對號入座，筆試，開書考，考試範圍：第1 ~ 3章。</td></tr>
         <tr><td>2017/10/26</td><td>資工<font color=blue><b>3A</b></font>計算機組織(第1~8週)英文單字小考(資電組11/09,數位組11/07)下課前10分鐘。</td></tr>
         <tr><td>2017/10/24</td><td>資工<font color=blue><b>3A</b></font>計算機組織作業二(HW#2)繳交期限:
-            <font color=red>資電組</font>11/16 12:00以前，<font color=red>數位組</font>11/14 12:00以前。 </td></tr>
+                <font color=red>資電組</font>11/16 12:00以前，<font color=red>數位組</font>11/14 12:00以前。 </td></tr>
         <tr><td>2017/10/01</td><td>資工<font color=blue><b>3A</b></font>計算機組織作業一(HW#1)繳交期限:
-            <font color=red>資電組</font>10/26 12:00以前，<font color=red>數位組</font>10/24 12:00以前。 </td></tr>
+                <font color=red>資電組</font>10/26 12:00以前，<font color=red>數位組</font>10/24 12:00以前。 </td></tr>
         <tr><td>2017/09/22</td><td>資工<font color=red><b>3A數位組</b></font>計算機組織106年<font color=red><b>10月10日(星期二)國慶日</b></font>，當日放假一天。</td></tr>
         <tr><td>2017/09/01</td><td>期中<font color=red>開書</font>考(30%)，期末<font color=red>開書</font>考(30%)，考試時間地點將於考前在課堂上及本網頁公告。</td></tr>
         <tr><td>2017/09/01</td><td>請同學在期限內將計算機組織作業<U>紙本交給老師</U>或<U>電子檔Email寄</U>到<br /><a href="mailto:TA1.rikki@gmail.com?subject=資工3A資電計算機組織第x次作業">TA1.rikki@gmail.com</a>(資工3A資電組),   &nbsp;&nbsp;  <a href="mailto:TA2.rikki@gmail.com?subject=資工3A數位計算機組織第x次作業">TA2.rikki@gmail.com</a>(資工3A數位組)。</td></tr>
         <tr><td>2017/09/01</td><td>資工3A計算機組織--上課地點在<font color=red><b>I309</b></font>教室(資電組/週四9:10-12:00), <font color=red><b>I310</b></font>教室(數位組/週二9:10-12:00)。<br />
         <tr><td>2017/09/01</td><td>教科書(Textbook): ※請遵守智慧財產權規定，不可非法影印教科書。<br /><font color=red>英文版：David A. Patterson and John L. Hennessy, “Computer Organization and Design - The Hardware/Software Interface,” 5th ed., Morgan-Kaufmann (東華書局代理), 2013, ISBN：0124077269.<br />中文版：鍾崇斌、楊惠親譯, “計算機組織與設計(第5版),” 東華書局, 2015, ISBN：9789574838110。</font><br />
-            <font color=black>參考資料(Reference)：</font><br />
-            William Stallings, “Computer Organization and Architecture: Designing for Performance,” 9th ed., Prentice Hall (高立), 2013.<br />
-        </td></tr>
+                <font color=black>參考資料(Reference)：</font><br />
+                William Stallings, “Computer Organization and Architecture: Designing for Performance,” 9th ed., Prentice Hall (高立), 2013.<br />
+            </td></tr>
         <tr><td>2017/08/01</td><td>
-            本校資工系大學部教育目標:<br />
-            一、奠定學生之資訊基本能力與素養<br />
-            二、培育學生之資訊專業技術及團隊合作應用能力<br />
-            三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
+                本校資工系大學部教育目標:<br />
+                一、奠定學生之資訊基本能力與素養<br />
+                二、培育學生之資訊專業技術及團隊合作應用能力<br />
+                三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
     </table><br />
     <center>
         ※以下部分檔案為PDF格式，請上網下載安裝Adobe Acrobat Reader中文版。
@@ -121,7 +109,7 @@
             <tr><td></td><td><a href="cod5-ch03.pdf">Ch03. Arithmetic for Computers(計算機的算術)</a> (2.1MB)  <a href="cod5-ch03_si.pdf"> 简体中文版</a></td></tr>
             <tr><td></td><td><font color=red>*** </font><a href="01-Chapter3exercises.pdf">計算機組織練習3(第3章)習題題目(不用交作業)</a>  <a href="01-Chapter3exercises_si.pdf"> 简体中文版</a></td></tr>
             <tr><td></td><td><font color=red>*** </font><a href="03-Chapter3.pdf">Possible solutions for Chapter 3 exercises</a>  <a href="03-Chapter3.pdf"> 简体中文版</a></td></tr>
-            <tr><td></td><td>*** 資工<font color=blue><b>3A</b></font>計算機組織<a href="cod5-ch01-03_sol.pdf">第1~3章習題補充講解參考</a>  <img src="../img/new2.gif" alt="New message!" /></br>
+            <tr><td></td><td>*** 資工<font color=blue><b>3A</b></font>計算機組織<a href="cod5-ch01-03_sol.pdf">第1~3章習題補充講解參考</a>  <img src="../img/new2.gif" alt="New message!" /></td></tr></br>
             <tr><td></td><td><br /></td></tr>
 
             <tr><td></td><td><a href="cod5-ch04-1.pdf">Ch04-1. The Processor(處理器) Part 1: A Single-cycle Implementation</a> (0.9MB) <a href="cod5-ch04-1_si.pdf"> 简体中文版</a></td></tr>
@@ -149,7 +137,7 @@
             <tr><td></td><td><br /></td></tr>
 
             <tr><td></td><td>Note: The following simulators referred in our lab. assignments, spim and Logisim, are freely availalbe and run on a variety of platforms including Windows, Macintosh, and Linux.
-            </td></tr>
+                </td></tr>
             <tr><td></td><td><a href="pcspim.zip" target=blank>PCSpim (4.3MB,ZIP)</a>: A MIPS assembly simulator by J.R. Larus, <a href="GetStartPCSpim.pdf" target=blank>Getting Started with PCSpim</a>, <a href="http://www.cs.wisc.edu/~larus/spim.html" target=blank>The Newest Version of SPIM</a></td></tr>
             <tr><td></td><td><a href="http://ozark.hendrix.edu/~burch/logisim/" target=blank>Logisim</a>: A logic circuit simulator</td></tr>
             <tr><td></td><td><br /><b><font color="red">[End]</font></b></td></tr>
@@ -159,9 +147,9 @@
 
 
 
-<footer class="container-fluid text-center">
-    <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
-</footer>
+    <footer class="container-fluid text-center">
+        <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
+    </footer>
 
 </body>
 </html>

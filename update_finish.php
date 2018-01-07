@@ -12,19 +12,18 @@
 include("mysql_connect.inc.php");
 
 $id = $_POST['id'];
+$name=$_POST['name'];
 $pw = $_POST['pw'];
-$pw2 = $_POST['pw2'];
 $telephone = $_POST['telephone'];
-$address = $_POST['address'];
-$other = $_POST['other'];
-//紅色字體為判斷密碼是否填寫正確
-if($_SESSION['username'] != null && $pw != null && $pw2 != null && $pw == $pw2)
-{
-    $id = $_SESSION['username'];
+$email = $_POST['email'];
 
+//紅色字體為判斷密碼是否填寫正確
+if($_SESSION['id'] != null && $pw != null )
+{
+    $id = $_SESSION['id'];
     //更新資料庫資料語法
-    $sql = "update member_table set password=$pw, telephone=$telephone, address=$address, other=$other where username='$id'";
-    if(mysql_query($sql))
+    $sql = "update user set name='$name',  pw='$pw', phone='$telephone', email='$email' where username='$id'";
+    if($result = $link->query($sql))
     {
         echo '修改成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';

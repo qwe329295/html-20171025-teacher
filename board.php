@@ -1,3 +1,7 @@
+<?php
+session_start();
+include ('func.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
-            }
+        }
 
         /* Add a gray background color and some padding to the footer */
         footer {
@@ -35,28 +39,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
             <a class="navbar-brand" href="http://www.asia.edu.tw/"><img src="asia.png" width="110"></a>
-
-
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li ><a href="index.html"><span style="color: #f21700">首頁</span></a></li>
-                <li class="active"><a href="board.html"><span style="color: #f21700">重要訊息公告</span></a></li>
-                <li><a href="ComputerOrganization.html"><span style="color: #f21700">計算機組織</span></a></li>
-                <li><a href="MicroprocessorSystem.html"><span style="color: #f21700">微處理器系統</span></a></li>
-                <li><a href="wifi.html"><span style="color: #f21700">無線網路</span></a></li>
-                <li><a href="webtech.html"><span style="color: #f21700">多媒體網站技術</span></a></li>
-                <li><a href="EmbeddedSystems.html"><span style="color: #f21700">嵌入式系統</span></a></li>
-                <li><a href="Network.html"><span style="color: #f21700">網站分析與管理</span></a></li>
-                <li><a href="book.html"><span style="color: #f21700">著作</span></a></li>
-                <li><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+      <?php bar(1)?>
     </div>
 </nav>
 
@@ -84,11 +69,11 @@
     <tr><td>2017/09/03</td><td><a href="mps106/mps.htm">微處理器系統課程公告(Class: Microprocessor System)</a></td></tr>
     <tr><td>2017/08/01</td><td>新學期新的開始、充實的一年，共同勉勵！ </td></tr>
     <tr><td>2017/05/01</td><td>就業徵才博覽會：<br>
-        時間：5/10(三)上午10：00~下午14：00。<br>
-        地點：廣場(M棟與一、二宿間廣場)、林蔭大道(M棟與H棟間走道)。</td></tr>
+            時間：5/10(三)上午10：00~下午14：00。<br>
+            地點：廣場(M棟與一、二宿間廣場)、林蔭大道(M棟與H棟間走道)。</td></tr>
     <tr><td>2017/04/10</td><td>本學期「停修」申請時間：<br>
-        ★(畢業班)：自4/24(一)10:00起至5/5(五)18:00止。<br>
-        ★（非畢業班)：自4/24(一)10:00起至6/2(五)18:00止。</td></tr>
+            ★(畢業班)：自4/24(一)10:00起至5/5(五)18:00止。<br>
+            ★（非畢業班)：自4/24(一)10:00起至6/2(五)18:00止。</td></tr>
     <tr><td>2017/03/10</td><td>Office Hours(請益時間):  <br />Tue.(二) 9:10-14:00 &nbsp;&nbsp; Wed.(三) 11:10-15:00	 &nbsp;&nbsp; Fri.(五)8:10-9:00</td></tr>
     <tr><td>2017/03/01</td><td><a href="http://www.asia.edu.tw/main.php?information/information_01/information_105y" target=blank>亞洲大學105學年度行事曆(2016 School Academic Year Calendar)</a></td></tr>
     <TR><TD>2017/02/20</TD><TD>開學日、開始上課，2/20~3/1日全校加退選。 </TD></tr>
@@ -106,10 +91,10 @@
     <tr><td>2016/02/05</td><td><a href="http://www.asia.edu.tw/main.php?information/information_01/information_104y" target=blank>亞洲大學104學年度行事曆(2015 School Academic Year Calendar)</a></td></tr>
     <tr><td>2016/02/01</td><td>新學期新希望，敬祝大家 新的一年 身體健康 萬事如意！</td></tr>
     <tr><td>2016/02/01</td><td>
-        本校資工系大學部教育目標:<br />
-        一、奠定學生之資訊基本能力與素養<br />
-        二、培育學生之資訊技術應用能力及團隊合作精神<br />
-        三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
+            本校資工系大學部教育目標:<br />
+            一、奠定學生之資訊基本能力與素養<br />
+            二、培育學生之資訊技術應用能力及團隊合作精神<br />
+            三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
     <tr><td>2016/01/01</td>
         <td>聖誕節&新年快樂(Merry X'mas and happy new year!)！</td></tr>
     <tr><td>2015/12/31</td><td>感謝同學們本學期的辛苦學習與合作，敬祝大家 學業進步 心想事成！</td></tr>

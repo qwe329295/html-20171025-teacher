@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <?php
-if($_SESSION['username'] != null)
+if($_SESSION['id'] != null)
 {
     echo "<form name=\"form\" method=\"post\" action=\"delete_finish.php\">";
     echo "要刪除的帳號：<input type=\"text\" name=\"id\" /> <br>";
@@ -19,6 +19,6 @@ if($_SESSION['username'] != null)
 else
 {
     echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=login.php>';
 }
 ?>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+include ('func.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,23 +40,7 @@
             </button>
             <a class="navbar-brand" href="http://www.asia.edu.tw/"><img src="asia.png" width="110"></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html"><span style="color: #f21700">首頁</span></a></li>
-                <li><a href="board.html"><span style="color: #f21700">重要訊息公告</span></a></li>
-                <li><a href="ComputerOrganization.html"><span style="color: #f21700">計算機組織</span></a></li>
-                <li><a href="MicroprocessorSystem.html"><span style="color: #f21700">微處理器系統</span></a></li>
-                <li><a href="wifi.html"><span style="color: #f21700">無線網路</span></a></li>
-                <li class="active"><a href="webtech.html"><span style="color: #f21700">多媒體網站技術</span></a></li>
-                <li><a href="EmbeddedSystems.html"><span style="color: #f21700">嵌入式系統</span></a></li>
-                <li><a href="Network.html"><span style="color: #f21700">網站分析與管理</span></a></li>
-                <li><a href="book.html"><span style="color: #f21700">著作</span></a></li>
-                <li><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+     <?php bar(5)?>
     </div>
 </nav>
 
@@ -63,13 +50,13 @@
         <h1>陳瑞奇(Jui-Chi Chen)  <img src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg" width="110"></h1>
         <p>professor of Asia University</p>
     </div>
-    </div>
+</div>
 <center>
     <h2><font face=標楷體>多媒體網站技術應用(<a href="mwtCN.htm">简体中文</a>)</font><br />
         Multimedia Web Technologies</h2>
     <table width="90%" border="1" style="border:3px #FFAC55 solid;">
         <tr><td width="5%" class="td1"> 日期(Date)</td><td class="td1"> 公 告 事 項 (Information)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <font size=4><B>(<a href="mwtCN.htm">简体中文画面</a>)</B></font>   <a href="http://moodle.asia.edu.tw/" target=_blank>亞洲大學磨課師教學平台</a></td></tr>
+                <font size=4><B>(<a href="mwtCN.htm">简体中文画面</a>)</B></font>   <a href="http://moodle.asia.edu.tw/" target=_blank>亞洲大學磨課師教學平台</a></td></tr>
         <tr><td>2017/05/11</td><td><a href="2016_FinalProject.pdf">第18週資工<b>2A</b>多媒體網站技術期末考專題實作及注意事項</a>, 展示及口試時間:2017/6/23 12:00以前, 地點: H103    <img src="../img/new2.gif" alt="New message!" /></td></tr>
         <tr><td>2017/04/21</td><td>調補課公告: 多媒體網站技術應用<font color=red>4/28(五)</font>老師因公差假調課，並於5/5、5/12、5/19第1節H103補課。</td></tr>
         <tr><td>2017/04/21</td><td>期中考實作: 考前10分鐘下載<a href="Midterm.zip">資工2A網站技術期中考檔案</a>(<font color="red"><b>不提供程式碼</b></font>)，將於期中考當時現場開放下載！&nbsp;&nbsp;&nbsp;H103備用主機: <a href="http://10.51.3.76/Midterm.zip">資工2A網站技術期中考檔案</a>(<font color="red"><b>與上面相同</b></font>)</td></tr>
@@ -82,13 +69,13 @@
         <tr><td>2017/02/11</td><td>資工CSIE <font color=blue><b>2A</b></font>多媒體網站技術應用(Multimedia Web Technologies)--上課時間地點(Class & Location): <font color=blue>每週五(FRI)9:10-12:00在健康大樓Room <font color=red><b>H103</b></font>教室。</font></td></td></tr>
         <tr><td>2017/02/11</td><td>Office Hours(請益時間):  <br />Tue.(二) 9:10-14:00 &nbsp;&nbsp; Wed.(三) 11:10-15:00	 &nbsp;&nbsp; Fri.(五)8:10-9:00</td></tr>
         <tr><td>2017/02/01</td><td>
-            參考資料(Reference): ※請遵守智慧財產權規定，不可非法影印教科書。<br />
-            1.<a href="http://www.w3schools.com/" target=_blank>http://www.w3schools.com/</a><br />
-            2.MIS2000 Lab, 周棟祥, 吳進魯, “ASP.NET專題實務I：C#入門實戰(VS2015版),” 松崗, 2015/09, ISBN: 9789572244586.<br />
-            3.資訊教育研究室, “ASP.NET 4.0從零開始-使用C#2010,” 博碩文化, 2011/09, ISBN: 9789862015162。<br />
-            4.吳燦銘、鄭苑鳳, “Dreamweaver CS6網頁設計應用集,” 博碩文化, 2012/08, ISBN: 9789862016312。
-            5.施威銘研究室, “Dreamweaver CS6 魔法書”, 旗標, 2013/1, ISBN: 9789574428175。
-        </td></td></tr>
+                參考資料(Reference): ※請遵守智慧財產權規定，不可非法影印教科書。<br />
+                1.<a href="http://www.w3schools.com/" target=_blank>http://www.w3schools.com/</a><br />
+                2.MIS2000 Lab, 周棟祥, 吳進魯, “ASP.NET專題實務I：C#入門實戰(VS2015版),” 松崗, 2015/09, ISBN: 9789572244586.<br />
+                3.資訊教育研究室, “ASP.NET 4.0從零開始-使用C#2010,” 博碩文化, 2011/09, ISBN: 9789862015162。<br />
+                4.吳燦銘、鄭苑鳳, “Dreamweaver CS6網頁設計應用集,” 博碩文化, 2012/08, ISBN: 9789862016312。
+                5.施威銘研究室, “Dreamweaver CS6 魔法書”, 旗標, 2013/1, ISBN: 9789574428175。
+            </td></td></tr>
     </table><br />
     <CENTER>
         ※以下部分檔案為PDF格式，請上網下載安裝Adobe Acrobat Reader中文版。
@@ -183,10 +170,10 @@
             <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CS6-Flag02.zip">2. HW#8: Dreamweaver網頁設計第二次練習(ZIP)</a> (25.4MB) <br /></td></tr>
             <tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="flag01-step4.pdf">2.1 Dreamweaver網頁設計練習: 參考步驟Step4</a> (6.3MB)  <a href="flag01-step4_CN.pdf">簡體中文版</a><br /></td></tr>
             <tr><td></td><td>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機1: <a href="http://10.51.3.200/AdobeCS6-DW.zip" target=_blank>DreamweaverCS6安裝軟體</a>(H103)<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機2: <a href="http://10.51.3.200/CS6.zip" target=_blank>DreamweaverCS6安裝軟體</a>(H103)<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機3: <a href="AdobeCS6-DW.zip" target=_blank>DreamweaverCS6安裝軟體</a><br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機4: <a href="CS6.zip" target=_blank>DreamweaverCS6安裝軟體</a></td></tr>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機1: <a href="http://10.51.3.200/AdobeCS6-DW.zip" target=_blank>DreamweaverCS6安裝軟體</a>(H103)<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機2: <a href="http://10.51.3.200/CS6.zip" target=_blank>DreamweaverCS6安裝軟體</a>(H103)<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機3: <a href="AdobeCS6-DW.zip" target=_blank>DreamweaverCS6安裝軟體</a><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下載主機4: <a href="CS6.zip" target=_blank>DreamweaverCS6安裝軟體</a></td></tr>
             <tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr>
 
 
