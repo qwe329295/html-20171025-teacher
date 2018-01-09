@@ -13,7 +13,7 @@ include("mysql_connect.inc.php");
 
 $id = $_POST['id'];
 $name=$_POST['name'];
-$pw = $_POST['pw'];
+$pw = sha1($_POST['pw']);
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 

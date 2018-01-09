@@ -15,7 +15,7 @@ $db_user = "105021028";
 $db_passwd = "#tlX6iWYC";
 if(!@$link=mysqli_connect($db_server,$db_user,$db_passwd,$db_name))
     die("無法對資料庫連線");
-mysqli_query("SET NAMES utf8");
+mysqli_query($link,"SET NAMES utf8");
 if(!@mysqli_select_db($link,$db_name))
     die("無法使用資料庫");
 ?>

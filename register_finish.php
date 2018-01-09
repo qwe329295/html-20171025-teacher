@@ -15,7 +15,7 @@ include("mysql_connect.inc.php");
 
 $username = $_POST['id'];
 $name = $_POST['name'];
-$pw = $_POST['pw'];
+$pw = sha1($_POST['pw']);
 $email = $_POST['email'];
 $telephone = $_POST['telephone'];
 
@@ -24,7 +24,7 @@ $telephone = $_POST['telephone'];
 //確認密碼輸入的正確性
 if ($username != null && $pw != null) {
     //新增資料進資料庫語法
-    $sql = "INSERT INTO user ( `username`, `name`, `pw`, `e-mail`, `phone`) VALUES ('$username','$name', '$pw','$email', '$telephone')";
+    $sql = "INSERT INTO user ( `username`, `name`, `pw`, `email`, `phone`) VALUES ('$username','$name', '$pw','$email', '$telephone')";
     if ($result = $link->query($sql)) {
         echo '新增成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';

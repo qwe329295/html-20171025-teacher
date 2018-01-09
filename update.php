@@ -22,11 +22,12 @@ if($_SESSION['id'] != null)
     $row = mysqli_fetch_row($result);
 
     echo "<form name=\"form\" method=\"post\" action=\"update_finish.php\">";
-    echo "帳號：<input type=\"text\" name=\"id\" value=\"$row[0]\" />(此項目無法修改) <br>";
-    echo "姓名：<input type=\"text\" name=\"\" value=\"$row[1]\" /> <br>";
-    echo "密碼：<input type=\"password\" name=\"pw\" value=\"$row[2]\" /> <br>";
-    echo "電話：<input type=\"text\" name=\"telephone\" value=\"$row[3]\" /> <br>";
+    echo "id:<input type=\"text\" name=\"\" value=\"$row[0]\" /><br>";
+    echo "帳號：<input type=\"text\" name=\"\" value=\"$row[1]\" /> <br>";
+    echo "姓名：<input type=\"text\" name=\"name\" value=\"$row[2]\" /> <br>";
+    echo "密碼：<input type=\"password\" name=\"pw\" value=\"\" /> <br>";
     echo "E-mail：<input type=\"text\" name=\"email\" value=\"$row[4]\" /> <br>";
+    echo "電話：<input type=\"text\" name=\"telephone\" value=\"$row[5]\" /> <br>";
     echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
     echo "</form>";
 

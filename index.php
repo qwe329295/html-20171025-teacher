@@ -3,13 +3,11 @@ session_start();
 include ('func.php');
 ?>
 <?php
-if (isset($_SESSION['id'])){
     include ("mysql_connect.inc.php");
-
-    $sql = "SELECT * FROM user where username = '$id'";
+    $sql = "SELECT * FROM firstpage where id = 1";
     $result=$link->query($sql);
     $row=$result->fetch_row();
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -77,32 +75,35 @@ if (isset($_SESSION['id'])){
         <li><a data-toggle="pill" href="#menu1"><span style="color: #a00296">學歷與經歷</span></a></li>
         <li><a data-toggle="pill" href="#menu2"><span style="color: #a00296">辦公室</span></a></li>
         <li><a data-toggle="pill" href="#menu3"><span style="color: #a00296">Mail Address</span></a></li>
+        <?php  if (isset($_SESSION['id'])){
+            echo '  <li><a data-toggle="pill" href="#menu3"><span style="color: #a00296">功能表</span></a></li>';
+        }?>
     </ul>
 
     <div class="tab-content" >
         <div id="home" class="tab-pane fade in active">
             <h3>基本資料</h3>
-            <p>姓名：陳瑞奇／Jui-Chi Chen</p>
-            <p>    任職單位：資訊工程學系 副教授</p>
+            <p><?php echo $row[1]; ?></p>
+            <p><?php echo $row[2]; ?></p>
         </div>
         <div id="menu1" class="tab-pane fade">
             <h3>經歷</h3>
-            <p>國立中興大學 資訊科學 博士</p>
-            <p>    亞洲大學副教授</p>
-            <p>  亞洲大學助理教授</p>
-            <p>    新竹工研院電腦與通訊工業研究所工程師</p>
+            <p><?php echo $row[3]; ?></p>
+            <p><?php echo $row[4]; ?></p>
+            <p><?php echo $row[5]; ?></p>
+            <p><?php echo $row[6]; ?></p>
         </div>
         <div id="menu2" class="tab-pane fade">
             <h3>office</h3>
-            <p> Room HB13 (B1 of Computer Sci. Bldg)</p>
-            <p>Tel: (04)2332-3456 ext. 20013</p>
-            <p>Fax: (04)2330-5737</p>
-            <p>E-mail:rikki@asia.edu.tw</p>
+            <p><?php echo $row[7]; ?></p>
+            <p><?php echo $row[8]; ?></p>
+            <p><?php echo $row[9]; ?></p>
+            <p><?php echo $row[10]; ?></p>
         </div>
         <div id="menu3" class="tab-pane fade">
-            <p>Department of Computer Science and Information Engineering</p>
-            <p>  Asia University</p>
-            <p>   500, Lioufeng Rd., Wufeng District, Taichung 41354, Taiwan </p>
+            <p><?php echo $row[11]; ?></p>
+            <p><?php echo $row[12]; ?></p>
+            <p><?php echo $row[13]; ?></p>
         </div>
     </div>
 </div>
