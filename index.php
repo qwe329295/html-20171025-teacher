@@ -1,12 +1,12 @@
 <?php
 session_start();
-include ('func.php');
+include('func.php');
 ?>
 <?php
-    include ("mysql_connect.inc.php");
-    $sql = "SELECT * FROM firstpage where id = 1";
-    $result=$link->query($sql);
-    $row=$result->fetch_row();
+include("mysql_connect.inc.php");
+$sql = "SELECT * FROM firstpage where id = 1";
+$result = $link->query($sql);
+$row = $result->fetch_row();
 
 ?>
 
@@ -30,7 +30,6 @@ include ('func.php');
             border-radius: 0;
         }
 
-
         /* Add a gray background color and some padding to the footer */
         footer {
 
@@ -39,13 +38,14 @@ include ('func.php');
             text-shadow: 5px 5px 8px rgb(255, 2, 0);
             font-size: 2em;
         }
-        .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+
+        .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
             color: #fff;
-            background-color: #dd5855;
+            background-color: #0fff1a;
         }
     </style>
 </head>
-<body>
+<body background="4_160609165306_1-lp.jpg">
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -64,23 +64,22 @@ include ('func.php');
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1 style="font-family: 'Rock Salt', cursive;">陳瑞奇(Jui-Chi Chen)  <img src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg" width="110" style="border-radius: 70px;"></h1>
+        <h1 style="font-family: 'Rock Salt', cursive;">陳瑞奇(Jui-Chi Chen) <img
+                    src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg" width="110" style="border-radius: 70px;">
+        </h1>
         <p style="font-family: 'Kranky', cursive;">professor of Asia University</p>
     </div>
 </div>
-<div class="container" style="background-color: #dd837a;border-radius: 10px; margin-bottom: 20px">
+<div class="container" style="background-color: #92dd94;border-radius: 10px; margin-bottom: 20px">
     <h2>個人簡歷</h2>
     <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#home"><span style="color: #a00296">基本資料</span></a></li>
-        <li><a data-toggle="pill" href="#menu1"><span style="color: #a00296">學歷與經歷</span></a></li>
+        <li class="active"><a data-toggle="pill" href="#home"><span style="color: #60cccb">基本資料</span></a></li>
+        <li><a data-toggle="pill" href="#menu1"><span style="color: saddlebrown">學歷與經歷</span></a></li>
         <li><a data-toggle="pill" href="#menu2"><span style="color: #a00296">辦公室</span></a></li>
         <li><a data-toggle="pill" href="#menu3"><span style="color: #a00296">Mail Address</span></a></li>
-        <?php  if (isset($_SESSION['id'])){
-            echo '  <li><a data-toggle="pill" href="#menu3"><span style="color: #a00296">功能表</span></a></li>';
-        }?>
     </ul>
 
-    <div class="tab-content" >
+    <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
             <h3>基本資料</h3>
             <p><?php echo $row[1]; ?></p>
@@ -105,6 +104,8 @@ include ('func.php');
             <p><?php echo $row[12]; ?></p>
             <p><?php echo $row[13]; ?></p>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5721582672886!2d120.68521641538389!3d24.0461479833298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693b17a99d736b%3A0x1c471d70cdc89dc9!2z5Lqe5rSy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1515554367341"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen　></iframe>
     </div>
 </div>
 

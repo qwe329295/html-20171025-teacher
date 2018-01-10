@@ -48,50 +48,7 @@ include ('func.php');
     <div class="container text-center">
         <h1>陳瑞奇(Jui-Chi Chen)  <img src="http://csie.asia.edu.tw/images/teacher/rikki1042.jpg"width="110" ></h1>
         <p>professor of Asia University</p>
-        <h2 align="center">個人檔案<br />Rikki's Profile</h2>
 
-        </center><font face=標楷體><font face="Times New Roman">
-                <font size=5 color=red><B>Personal information:</B></font><br>
-                Jui-Chi Chen (陳瑞奇)(Rikki)<br>
-                Associate Professor<br>
-                Department of Computer Science and Information Engineering<br>
-                Asia University, Taiwan <br>
-                Ph.D. in Computer Science and Engineering<br>
-                National Chung Hsing University<br>
-                B.S., M.S. in Computer Science and Information Engineering<br>
-                National Chiao Tung University<br>
-                <br>
-                Office: Room HB13 (B1 of Computer Sci. Bldg)<br>
-                Tel: (04)2332-3456 ext. 20013<br>
-                Fax: (04)2330-5737<br>
-                <FONT FACE="Times Roman" SIZE=3 color=blue>
-                    WWW: <A HREF="http://dns2.asia.edu.tw/~rikki/" target=_top>http://dns2.asia.edu.tw/~rikki</A><br><br>
-                    Mail Address: <br>
-                    Department of Computer Science and Information Engineering <br>
-                    Asia University<br>
-                    500, Lioufeng Rd., Wufeng District, Taichung 41354, Taiwan<br>
-                    <br>
-                    <br><font size=5 color=red><B>Research areas:</B></font><br />
-                    <OL>
-                        <LI>Biomedical informatics (Nutrient & biomedical information)<br />
-                        <LI>Data mining and analysis
-                        <LI>Biomedical communications (E-health)<br />
-                        <LI>Radio resource management in wireless networks<br />
-                        <LI>Resource allocation algorithms for cellular networks<br />
-                        <LI>Wireless communications<br />
-                    </OL>
-
-                    <br><font size=5 color=red><B>Recent teaching:</B></font><br>
-                    <OL>
-                        <LI>Wireless Communications<br>
-                        <LI>Multimedia Web Technologies<br>
-                        <LI>Introduction to Embedded Systems<br>
-                        <LI>Microcomputer Systems<br>
-                        <LI>Computer Organization and Architecture<br>
-                        <LI>Information and Life<br>
-                        <LI>Principles and Design of Computer Network (Graduate course)<br>
-                        <LI>Network Analysis and Management (Graduate course)<br>
-                    </OL>
 
                     <br><font size=5 color=red><B>Publications:</B></font><br>
                     A. Journal papers<br>
