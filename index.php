@@ -3,10 +3,7 @@ session_start();
 include('func.php');
 ?>
 <?php
-include("mysql_connect.inc.php");
-$sql = "SELECT * FROM firstpage where id = 1";
-$result = $link->query($sql);
-$row = $result->fetch_row();
+
 
 ?>
 
@@ -45,7 +42,7 @@ $row = $result->fetch_row();
         }
     </style>
 </head>
-<body background="4_160609165306_1-lp.jpg">
+<body style="background-color:#b0b0b0">
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -81,28 +78,50 @@ $row = $result->fetch_row();
 
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-            <h3>基本資料</h3>
+            <?php
+            include("mysql_connect.inc.php");
+            $sql = "SELECT * FROM firstpage1 where id = 1";
+            $result = $link->query($sql);
+            $row = $result->fetch_row();
+            ?>
             <p><?php echo $row[1]; ?></p>
             <p><?php echo $row[2]; ?></p>
+
         </div>
         <div id="menu1" class="tab-pane fade">
-            <h3>經歷</h3>
+            <?php
+            include("mysql_connect.inc.php");
+            $sql = "SELECT * FROM firstpage2 where id = 1";
+            $result = $link->query($sql);
+            $row = $result->fetch_row();
+            ?>
+            <p><?php echo $row[1]; ?></p>
+            <p><?php echo $row[2]; ?></p>
             <p><?php echo $row[3]; ?></p>
             <p><?php echo $row[4]; ?></p>
-            <p><?php echo $row[5]; ?></p>
-            <p><?php echo $row[6]; ?></p>
         </div>
         <div id="menu2" class="tab-pane fade">
-            <h3>office</h3>
-            <p><?php echo $row[7]; ?></p>
-            <p><?php echo $row[8]; ?></p>
-            <p><?php echo $row[9]; ?></p>
-            <p><?php echo $row[10]; ?></p>
+            <?php
+            include("mysql_connect.inc.php");
+            $sql = "SELECT * FROM firstpage3 where id = 1";
+            $result = $link->query($sql);
+            $row = $result->fetch_row();
+            ?>
+            <p><?php echo $row[1]; ?></p>
+            <p><?php echo $row[2]; ?></p>
+            <p><?php echo $row[3]; ?></p>
+            <p><?php echo $row[4]; ?></p>
         </div>
         <div id="menu3" class="tab-pane fade">
-            <p><?php echo $row[11]; ?></p>
-            <p><?php echo $row[12]; ?></p>
-            <p><?php echo $row[13]; ?></p>
+            <?php
+            include("mysql_connect.inc.php");
+            $sql = "SELECT * FROM firstpage4 where id = 1";
+            $result = $link->query($sql);
+            $row = $result->fetch_row();
+            ?>
+            <p><?php echo $row[1]; ?></p>
+            <p><?php echo $row[2]; ?></p>
+            <p><?php echo $row[3]; ?></p>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5721582672886!2d120.68521641538389!3d24.0461479833298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693b17a99d736b%3A0x1c471d70cdc89dc9!2z5Lqe5rSy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1515554367341"
                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen　></iframe>
@@ -112,6 +131,7 @@ $row = $result->fetch_row();
 
 <footer class="container-fluid text-center">
     <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
+    <p style="font-size: small;color:whitesmoke">圖片來源 http://www.jordangrimmer.co.uk/q6uergcr3pm6d8d545g47ufqx9mcbx</p>
 </footer>
 
 </body>

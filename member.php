@@ -16,9 +16,9 @@ if($_SESSION['id'] != null)
     echo '<a href="register.php">新增</a>    ';
     echo '<a href="update.php">修改</a>    ';
     echo '<a href="delete.php">刪除</a>  <br><br>';
-    $sql = "SELECT * FROM member_table";
-    $result = imysql_query($sql);
-    while($row = imysql_fetch_row($result))
+    $sql = "SELECT * FROM user";
+    $result = mysqli_query($link,$sql);
+    while($row = mysqli_fetch_row($result))
     {
         echo "$row[0] - 名字(帳號)：$row[1], " .
             "電話：$row[3], 地址：$row[4], 備註：$row[5]<br>";

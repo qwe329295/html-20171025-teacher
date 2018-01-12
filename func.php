@@ -20,7 +20,7 @@ function bar($num){
 
                 <li <?php if($num==8) echo'class="active"'; ?>><a href="book.php"><span style="color: #f21700">著作</span></a></li>
     <?php  if (isset($_SESSION['id'])) {
-        echo '<li ><a href="member.php"><span style="color: #f21700">控制台</span></a></li>';
+        echo '<li ><a href="allmember.php"><span style="color: #f21700">控制台</span></a></li>';
     }
     ?>
                 <li ><a href="http://dns2.asia.edu.tw/~rikki/RikkiRabit.pdf"><span style="color: #f21700">瑞奇的煩惱</span></a></li>

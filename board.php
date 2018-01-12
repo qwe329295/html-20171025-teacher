@@ -29,7 +29,7 @@ include ('func.php');
         }
     </style>
 </head>
-<body>
+<body style="background-color:#b0b0b0">
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">

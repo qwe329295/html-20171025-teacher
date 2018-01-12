@@ -25,7 +25,7 @@ if($_SESSION['id'] != null && $pw != null )
     $sql = "update user set name='$name',  pw='$pw', phone='$telephone', email='$email' where username='$id'";
     if($result = $link->query($sql))
     {
-        echo '修改成功!';
+        echo '<script >alert("修改成功!")</script>';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
     }
     else
