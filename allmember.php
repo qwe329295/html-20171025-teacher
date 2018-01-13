@@ -15,13 +15,13 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        .nav-tabs>li>a,.nav>li>a,a{
-              color: #000000;
+        .nav-tabs > li > a, .nav > li > a, a {
+            color: #000000;
             font-weight: bold;
         }
     </style>
 </head>
-<body background="hill.jpg" style="background-size: 100%">
+<body background="hill.jpg" style="background-size: 100%; ">
 
 <div class="container">
     <h2>CONTROL YOURSELF</h2>
@@ -49,33 +49,36 @@ session_start();
 
             echo "<form  method=\"post\" action=\"update_finish1.php\">";
             while ($row = mysqli_fetch_row($result)) {
-                echo "姓名:<input type=\"text\" name=\"name\" value=\"$row[1]\" /><br>";
-                echo "任職單位:<input type=\"text\" name=\"job\" value=\"$row[2]\" /><br>";
+
+                echo "姓名:<input type=\"text\" name=\"name\" value=\"$row[1]\"size='50px' /><br>";
+                echo "任職單位:<input type=\"text\" name=\"job\" value=\"$row[2]\" size='50px'/><br>";
+
+
             }
             $sql = "SELECT * FROM firstpage2";
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
-                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" /><br>";
-                echo "<input type=\"text\" name=\"info1\" value=\"$row[2]\" /><br>";
-                echo "<input type=\"text\" name=\"info2\" value=\"$row[3]\" /><br>";
-                echo "<input type=\"text\" name=\"info3\" value=\"$row[4]\" /><br>";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" size='50px'/><br>";
+                echo "<input type=\"text\" name=\"info1\" value=\"$row[2]\" size='50px'/><br>";
+                echo "<input type=\"text\" name=\"info2\" value=\"$row[3]\"size='50px'/><br>";
+                echo "<input type=\"text\" name=\"info3\" value=\"$row[4]\" size='50px'/><br>";
             }
 
             $sql = "SELECT * FROM firstpage3";
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
-                echo "<input type=\"text\" name=\"room\" value=\"$row[1]\" /><br>";
-                echo "Tel:<input type=\"text\" name=\"tel\" value=\"$row[2]\" /><br>";
-                echo "Fax:<input type=\"text\" name=\"fax\" value=\"$row[3]\" /><br>";
-                echo "E-mail:<input type=\"text\" name=\"email\" value=\"$row[4]\" /><br>";
+                echo "<input type=\"text\" name=\"room\" value=\"$row[1]\" size='50px'/><br>";
+                echo "Tel:<input type=\"text\" name=\"tel\" value=\"$row[2]\" size='50px'/><br>";
+                echo "Fax:<input type=\"text\" name=\"fax\" value=\"$row[3]\" size='50px'/><br>";
+                echo "E-mail:<input type=\"text\" name=\"email\" value=\"$row[4]\" size='50px'/><br>";
             }
 
             $sql = "SELECT * FROM firstpage4";
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
-                echo "<input type=\"text\" name=\"info4\" value=\"$row[1]\" /><br>";
-                echo "<input type=\"text\" name=\"info5\" value=\"$row[2]\" /><br>";
-                echo "<input type=\"text\" name=\"info6\" value=\"$row[3]\" /><br>";
+                echo "<input type=\"text\" name=\"info4\" value=\"$row[1]\" size='50px'/><br>";
+                echo "<input type=\"text\" name=\"info5\" value=\"$row[2]\"size='50px'/><br>";
+                echo "<input type=\"text\" name=\"info6\" value=\"$row[3]\"size='50px'/><br>";
             }
             echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
             echo "</form>";
@@ -90,9 +93,9 @@ session_start();
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"boardupdate.php\">";
-                echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" size='50px'/>";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\"size='50px' />";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -103,8 +106,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"boardnew.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" /> ";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" /> ";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" size='50px'/> ";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" size='50px'/> ";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -119,8 +122,8 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"class1update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" size='50px'/>";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -131,8 +134,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"class1new.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" />";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" />";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" size='50px'/>";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" size='50px'/>";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -145,8 +148,8 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"class2update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\"size='50px'/>";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\"size='50px' />";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -157,8 +160,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"class2new.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" />";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" />";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\"size='50px'/>";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\"size='50px' />";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -171,8 +174,8 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"class3update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" size='50px'/>";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\"size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -183,8 +186,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"class3new.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" />";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" />";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\"size='50px' />";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" size='50px'/>";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -197,8 +200,8 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"class4update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" size='50px'/>";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\"size='50px' />";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -209,8 +212,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"class4new.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" />";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" />";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" size='50px'/>";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\"size='50px' />";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -223,8 +226,8 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"class5update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" />";
+                echo "<input type=\"date\" name=\"date\" value=\"$row[1]\"size='50px' />";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[2]\" size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -235,8 +238,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"class5new.php\">";
-            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\" />";
-            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\" />";
+            echo "<span style='color:whitesmoke '>日期：</span><input type = \"date\" name = \"date\" value=\"$row[1]\"size='50px' />";
+            echo "<span style='color:whitesmoke '>事件：</span><input type = \"text\" name = \"info\" value=\"$row[2]\"size='50px' />";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
@@ -251,9 +254,10 @@ session_start();
             $sql = "SELECT * FROM book1";
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
+//                echo "$row[1]";
                 echo "<form  method=\"post\" action=\"book1update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" />";
+                echo "<input type='text' name='info' value='$row[1]' size='50px' />";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -264,16 +268,15 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"book1new.php\">";
-            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\" />";
-            echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
-            echo "</form >";
+            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\"size='50px' />";
+
 
             $sql = "SELECT * FROM book2";
             $result = $link->query($sql);
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"book2update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" />";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -284,9 +287,8 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"book2new.php\">";
-            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\" />";
-            echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
-            echo "</form >";
+            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\" size='50px'/>";
+
 
 
             $sql = "SELECT * FROM book3";
@@ -294,7 +296,7 @@ session_start();
             while ($row = mysqli_fetch_row($result)) {
                 echo "<form  method=\"post\" action=\"book3update.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" />";
-                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\" />";
+                echo "<input type=\"text\" name=\"info\" value=\"$row[1]\"size='50px'/>";
                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                 echo "</form>";
 
@@ -305,7 +307,7 @@ session_start();
             }
 
             echo "<form name=\"form\" method=\"post\" action = \"book3new.php\">";
-            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\" />";
+            echo "<span style='color:whitesmoke '></span><input type = \"text\" name = \"info\" value=\"$row[1]\" size='50px'/>";
             echo "<input type = \"submit\" name = \"button\" value = \"新增資料\" />";
             echo "</form >";
             ?>
