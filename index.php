@@ -2,10 +2,7 @@
 session_start();
 include('func.php');
 ?>
-<?php
 
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +35,7 @@ include('func.php');
 
         .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
             color: #fff;
-            background-color: #0fff1a;
+            background-color: #ff0b01;
         }
     </style>
 </head>
@@ -46,12 +43,12 @@ include('func.php');
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             <a class="navbar-brand" href="http://www.asia.edu.tw/"><img src="asia.png" width="110"></a>
         </div>
         <?php bar(0) ?>
@@ -70,10 +67,10 @@ include('func.php');
 <div class="container" style="background-color: #92dd94;border-radius: 10px; margin-bottom: 20px">
     <h2>個人簡歷</h2>
     <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#home"><span style="color: #60cccb">基本資料</span></a></li>
-        <li><a data-toggle="pill" href="#menu1"><span style="color: saddlebrown">學歷與經歷</span></a></li>
-        <li><a data-toggle="pill" href="#menu2"><span style="color: #a00296">辦公室</span></a></li>
-        <li><a data-toggle="pill" href="#menu3"><span style="color: #a00296">Mail Address</span></a></li>
+        <li class="active"><a data-toggle="pill" href="#home">基本資料</a></li>
+        <li><a data-toggle="pill" href="#menu1">學歷與經歷</a></li>
+        <li><a data-toggle="pill" href="#menu2">辦公室</a></li>
+        <li><a data-toggle="pill" href="#menu3">Mail Address</a></li>
     </ul>
 
     <div class="tab-content">
@@ -131,7 +128,6 @@ include('func.php');
 
 <footer class="container-fluid text-center">
     <p style="font-family: 'Hanalei', cursive;color: whitesmoke">@Made By 105021028 PLZ DON'T COPY</p>
-    <p style="font-size: small;color:whitesmoke">圖片來源 http://www.jordangrimmer.co.uk/q6uergcr3pm6d8d545g47ufqx9mcbx</p>
 </footer>
 
 </body>

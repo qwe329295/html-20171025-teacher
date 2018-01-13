@@ -53,34 +53,24 @@ include ('func.php');?>
         <p>professor of Asia University</p>
     </div>
 </div>
+<center>
 <h2>微處理器系統<br />Microprocessor Systems</h2>
 
-<table width="90%" border="1"style="border:3px #FFAC55 solid;">
+<table width="90%" border="1"style="border:3px #FFAC55 solid;font-size: 2em">
 
     <tr><td width="14%"  class="td1"> 日 期 (Date)</td><td  class="td1"> 公 告 事 項 (Information)  <a href="http://moodle.asia.edu.tw/" target=_blank>亞洲大學磨課師教學平台</a></td></tr>
-    <tr><td>2017/12/26</td><td>第18週(資工<B>3A</B>:107/1/17)<A HREF="106_Projects.pdf">期末考考試規則及注意事項(8051 u-P1實驗板作品)</A>, 期末書面報告(不收電子檔)最慢在107/1/17 16:00以前繳交(一組一份)，謝謝!   <img src="../img/new2.gif" alt="New message!" /></td></td></TR>
-    <tr><td>2017/12/18</td><td><A HREF="RandomNumber.c">關於8051亂數程式的參考寫法。</A></td></td></TR>
-    <tr><td>2017/12/15</td><td>資工<font color=blue><b>3A</b></font>微處理器系統作業4(HW#4)實驗報告(每組一份)繳交期限: 2017/12/27 16:00以前。 </td></tr>
-    <tr><td>2017/11/29</td><td>資工<font color=blue><b>3A</b></font>微處理器系統作業3(HW#3)實驗報告(每組一份)繳交期限: 2017/12/13 16:00以前。</td></tr>
-    <tr><td>2017/11/01</td><td><a href="Midterm.pdf" target="blank">第九週(資工<font color="red"><B>3A</B>:2017/11/15</font>)<font color="blue">期中考</font>考試規則及注意事項(簡易數位時鐘)</a>,(每組一份書面報告及每人個別口試)</td></tr>
-    <tr><td>2017/10/15</td><td>資工<font color=blue><b>3A</b></font>微處理器系統作業2(HW#2)實驗報告(每組一份)繳交期限: 2017/11/15 16:00以前。</td></tr>
-    <tr><td>2017/10/15</td><td>資工<font color=blue><b>3A</b></font>微處理器系統作業1(HW#1)實驗報告(每組一份)繳交期限: 2017/11/01 16:00以前。</td></tr>
-    <tr><td>2017/9/22</td><td>資工<font color=red><b>3A</b></font>微處理器系統106年<font color=red><b>10月4日(星期三)中秋節</b></font>，當日放假一天。</td></tr>
-    <tr><td>2017/09/05</td><td>請同學將實驗報告(含電路圖)及程式寄給助教(每組交一份), 微處理器系統助教的Email為<a href="mailto:rikki8051TA@gmail.com?subject=微處理器系統3A班第?次作業">rikki8051TA@gmail.com</a>(資工3A)。報告格式範例: <a href="repref.doc" target=_blank>實驗報告參考格式.doc</a> </td></tr>
-    <tr><td>2017/09/05</td><td>單晶片8051實驗教室為資訊大樓<font color=red>I533</font>微算機系統實驗室，實驗課每位同學請攜帶備用隨身碟一隻(容量不限)。</td></tr>
-    <tr><td>2017/09/01</td><td>大三微處理器系統(Microprocessor System)--上課時間地點(Class & Location):<br />資工CSIE <font color=blue><b>3A</b>: 每週三(WED)13:10-16:00在Room <font color=red><b>I533</b></font>教室。</font><br /></td></tr>
-    <tr><td>2017/09/01</td><td>參考書(Reference): ※請遵守智慧財產權規定，不可非法影印教科書。<br /><font size=2>
-                1. 張義和等, "例說89S51 C語言," 第五版, 新文京, 2015/07.<br />
-                2. 江戶川, "快學89S51-C 新手上路," 新文京, 2012/03。<br />
-                3. I. Scott Mackenzie and Raphael C.-W. Phan, “The 8051 Microcontroller,” 4th ed., Pearson Prentice Hall (高立圖書代理), 2007。<br />
-                4. 林振漢, "8051 單晶片實作-使用C語言," 初版七刷, 博碩文化, 2007/03。<br />
-                5. 林銘波, "微算機基本原理與應用MCS-51第二版," 全華科技圖書, 2008/3。<br />
-            </font></td></tr>
-    <tr><td>2017/08/01</td><td>
-            本校資工系大學部教育目標:<br />
-            一、奠定學生之資訊基本能力與素養<br />
-            二、培育學生之資訊專業技術及團隊合作應用能力<br />
-            三、養成學生重視專業倫理與具備終身學習之素養</td></tr>
+    <?php
+    include("mysql_connect.inc.php");
+
+    $sql = "SELECT * FROM class2";
+    $result = $link->query($sql);
+    while ($row = mysqli_fetch_row($result)) {
+        echo "<tr>";
+        echo " <td>$row[1]</td>";
+        echo "<td>$row[2]</td>";
+        echo "</tr>";
+    }
+    ?>
 </table><br />
 <center>
     ※以下部分檔案為PDF格式，請上網下載安裝Adobe Acrobat Reader中文版。
